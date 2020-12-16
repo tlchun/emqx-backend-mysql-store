@@ -19,7 +19,7 @@ make
 #### 1、rebar.config 添加依赖
 {deps,
    [
-   {emqx-backend-mysql-store, {git, "https://github.com/tlchun/emqx-backend-mysql-store.git", {branch, "master"}}}
+   {emqx_backend_mysql_store, {git, "https://github.com/tlchun/emqx-backend-mysql-store.git", {branch, "master"}}}
    ]
 }
 
