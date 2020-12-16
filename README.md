@@ -38,24 +38,24 @@ make
 
 #### 4、emqx_backend_mysql.conf
 
-%% mysql 服务器
-mysql.server = 127.0.0.1:3306
-%% 连接池数量
-mysql.pool_size = 8
-%% mysql 用户名
-mysql.username = root
-%% mysql密码
-mysql.password = 123456
-%% 数据库名
-mysql.database = mqtt
-%% 超时时间（秒）
-mysql.query_timeout = 10s
+%% mysql 服务器  
+mysql.server = 127.0.0.1:3306  
+%% 连接池数量  
+mysql.pool_size = 8  
+%% mysql 用户名  
+mysql.username = root  
+%% mysql密码  
+mysql.password = 123456  
+%% 数据库名  
+mysql.database = mqtt  
+%% 超时时间（秒）  
+mysql.query_timeout = 10s  
 
 #### 注意执行init.sql文件
 
 #### 5、加载插件
-1、./bin/emqx_ctl plugins load emqx_backend_mysql  适合emqx启动后
-2、编辑 data/loaded_plugins 添加 {emqx_backend_mysql, true}. 适合未启动之前配置
-3、可以在emqx启动后，在 dashboard 插件栏点击启用emqx_backend_mysql 即可启用成功
+1、./bin/emqx_ctl plugins load emqx_backend_mysql  适合emqx启动后  
+2、编辑 data/loaded_plugins 添加 {emqx_backend_mysql, true}. 适合未启动之前配置  
+3、可以在emqx启动后，在 dashboard 插件栏点击启用emqx_backend_mysql 即可启用成功  
 
 ##### 6、进入dashboard的websocket 创建客户端，创建订阅，创建发布，然后就可以在数据库看到相关的信息
