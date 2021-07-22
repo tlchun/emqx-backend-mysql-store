@@ -24,9 +24,3 @@ start(_StartType, _StartArgs) ->
     {ok, Sup}.
 
 stop(_State) -> emqx_backend_mysql:unload().
-
-%% internal functions
-
-
-%% {ok,{_,[{abstract_code,{_,AC}}]}} = beam_lib:chunks(emqx_backend_mysql,[abstract_code]).
-%% io:fwrite("~s~n", [erl_prettypr:format(erl_syntax:form_list(AC))]).
